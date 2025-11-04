@@ -1,6 +1,9 @@
 <script>
         import { onMount } from 'svelte';
         import '$lib/batman.css';
+        import Navigation from '$lib/components/Navigation.svelte';
+        import Characters from '$lib/components/Characters.svelte';
+
         const batpat2022 = '/images/batman-2022.png';
         const batmobile = '/images/batmobile-the-batman-2022.jpg';
         const batcycle = '/images/Batcycle.webp';
@@ -9,13 +12,7 @@
     /** @type {{ data: import('./$types').PageData }} */
 </script>
 <nav>
-    <ul>
-        <li><a href="#batman">BATMAN</a></li>
-        <li><a href="#characters">CHARACTERS</a></li>
-        <li><a href="#vehicles">VEHICLES</a></li>
-        <li><a href="#city">CITY</a></li>
-        <li><a href="#story">STORY</a></li>
-    </ul>
+    <Navigation />
 </nav>
 <section id="page">
     <section id="batman">
@@ -44,9 +41,7 @@
     <section id="characters">
         <h2>CHARACTERS</h2>
         <article>
-            <a href="catwoman">CATWOMAN</a>
-            <a href="riddler">RIDDLER</a>
-            <a href="jim-gordon">JIM GORDON</a>
+            <Characters />
         </article>
     </section>
 
