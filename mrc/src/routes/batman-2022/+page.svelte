@@ -11,16 +11,26 @@
 
     /** @type {{ data: import('./$types').PageData }} */
 </script>
+
+<svelte:head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</svelte:head>
 <nav>
     <Navigation />
 </nav>
 <section id="page">
     <section id="batman">
         <article>
+            <h1>BATMAN</h1>
             <picture>
                 <img src={batpat2022} alt="Batman's upper body stands with his head looking down. Red light shines from above." width="200">
             </picture>
-            <h1>BATMAN</h1>
             <p>
                 Bruce Thomas Wayne is a reclusive orphaned billionaire, 
                 the current owner of Wayne Enterprises, the direct heir of the Wayne Family, and the heroic figure 
@@ -39,15 +49,15 @@
     </section>
 
     <section id="characters">
-        <h2>CHARACTERS</h2>
         <article>
+            <h2>CHARACTERS</h2>
             <Characters />
         </article>
     </section>
 
     <section id="vehicles">
-        <h3>VEHICLES</h3>
         <article>
+            <h3>VEHICLES</h3>
             <picture>
                 <img 
                     src={batmobile} 
@@ -80,8 +90,8 @@
     </section>
 
     <section id="city">
-        <h4>CITY</h4>
         <article>
+            <h4>CITY</h4>
             <picture>
                 <img 
                     src={gotham} 
@@ -100,8 +110,8 @@
     </section>
 
     <section id="story">
-        <h5>STORY</h5>
         <article>
+            <h5>STORY</h5>
             <p>
                 On Halloween night, Gotham City mayor Don Mitchell, Jr. is brutally 
                 murdered by a serial killer calling himself the Riddler. Billionaire Bruce Wayne, 

@@ -1,3 +1,4 @@
+/* default */
 @font-face {
     font-family: 'fiorello';
     src: url(../lib/fonts/fiorello.otf);
@@ -10,6 +11,8 @@
 
 :root {
     --heading-font: 'fiorello';
+    --heading-font-size: 5.5rem;
+    --heading-font-letter-spacing: .01em;
     --paragraph-font: 'news-gothic';
 
     --primary-color-red-dark-1: hsl(0 84% 23%);
@@ -58,12 +61,13 @@
     --neutral-color-lighter: hsl(0 0 95%);
 }
 
-/* h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-family: var(--heading-font);
-    color: var(--primary-color-red);
+    font-size: var(--heading-font-size);
+    letter-spacing: var(--heading-font-letter-spacing);
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--neutral-color-darkest);
-} */
+}
