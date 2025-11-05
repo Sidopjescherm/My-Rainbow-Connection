@@ -65,9 +65,27 @@ h1, h2, h3, h4, h5 {
     font-family: var(--heading-font);
     font-size: var(--heading-font-size);
     letter-spacing: var(--heading-font-letter-spacing);
+    padding: 0.1rem;
+
+    color: var(--neutral-color-darkest);
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-red);
+    }
+}
+
+a{
+    font-family: var(--heading-font);
+    font-size: larger;
+    color: var(--neutral-color-darkest);
+    @media (prefers-color-scheme: dark) {
+        color: var(--primary-color-red);
+    }
 }
 
 p {
     font-family: var(--paragraph-font);
     color: var(--neutral-color-darkest);
+    @media (prefers-color-scheme: dark) {
+        color: var(--neutral-color-light);
+    }
 }
