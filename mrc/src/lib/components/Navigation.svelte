@@ -106,14 +106,27 @@
         }
 
         @media (width >= 600px) {
-            padding: 1.5rem;
+            padding: 1rem;
+            font-size: 2rem;
         }
     }
 
     a:hover {
         background-color: var(--neutral-color-darkest);
         color: var(--accent-color-yellow);
+        @media (prefers-color-scheme: dark){
+            background-color: var(--primary-color-red-light-2);
+            color: var(--neutral-color-darkest);
+        }
 
         transition: 0.2s;
+    }
+
+    a:focus {
+        outline: solid 3px var(--neutral-color-darkest);
+        border-radius: 0.8rem;
+        @media (prefers-color-scheme: dark){
+            outline: solid 3px var(--primary-color-red);
+        }
     }
 </style>
