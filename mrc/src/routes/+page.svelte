@@ -1,3 +1,13 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<main>
+    <h1>My Rainbow Connection</h1>
+
+    <article>
+        <h2>Greetings webtraveler!</h2>
+
+        <p>
+            My name is Sidney and I welcome you to my page. This is a project where I'll find the raibow connection 
+            that Kermit sings of. For me that means seeing what frontend means for me. Now pull up a chair and see
+            what this site has to offer.
+        </p>
+    </article>
+</main>
