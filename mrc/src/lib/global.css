@@ -1,6 +1,27 @@
-@media (prefers-color-scheme: dark) {
-    body {
-        background: black;
-        color: white;
+:root {
+    color-scheme: light dark;
+
+   --universal-bright: hsl(43, 9%, 84%);
+   --universal-dark: hsl(225 11% 8);
+
+   --text-size: 16px;
+}
+body {
+    background: light-dark(var(--universal-bright), var(--universal-dark));
+    color: light-dark(var(--universal-dark), var(--universal-bright));
+}
+
+h1 {
+    font-size: 2.5rem;
+    @media (prefers-color-scheme: dark) {
+        font-size: 2.56rem;
+    }
+}
+
+p {
+    font-size: var(--text-size);
+    @media (prefers-color-scheme: dark) {
+        font-size: 18px;
+        line-height: 1.8;
     }
 }
