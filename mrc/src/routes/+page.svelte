@@ -9,15 +9,11 @@
             that Kermit sings of. For me that means seeing what frontend means for me. Now pull up a chair and see
             what this site has to offer.
         </p>
-
-        <picture>
-            <img src="" alt=""/>
-        </picture>
     </article>
 </main>
 
 <style>
-    p {
-        max-width: 80ch;
+    article {
+        border-color: var(--divided-red);
     }
 </style>

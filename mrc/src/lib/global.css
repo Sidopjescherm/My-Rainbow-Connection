@@ -1,27 +1,35 @@
 :root {
     color-scheme: light dark;
-
    --universal-bright: hsl(43, 9%, 84%);
    --universal-dark: hsl(225 11% 8);
 
-   --text-size: 16px;
+   --divided-red: light-dark(hsl(347 91 39), hsl(347 71 19));
 }
 body {
     background: light-dark(var(--universal-bright), var(--universal-dark));
     color: light-dark(var(--universal-dark), var(--universal-bright));
+    margin-inline: auto;
+    max-inline-size: 40rem;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 2.5rem, 3rem);
     @media (prefers-color-scheme: dark) {
-        font-size: 2.56rem;
+        font-size: clamp(2rem, 2.7rem, 3rem);
     }
 }
 
+h2 {
+    font-size: clamp(1.8rem, 2rem, 2.8rem);
+}
+
 p {
-    font-size: var(--text-size);
+    font-size: clamp(1rem, 1.4rem, 2rem);
     @media (prefers-color-scheme: dark) {
-        font-size: 18px;
-        line-height: 1.8;
+        line-height: 1.6;
+    }
+
+    &:hover {
+        box-shadow: 1rem 1rem 1rem var(--divided-red);
     }
 }
