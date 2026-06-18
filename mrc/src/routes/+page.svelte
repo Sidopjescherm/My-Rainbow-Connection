@@ -1,7 +1,6 @@
 <main>
-    <h1>My Rainbow Connection</h1>
-
     <article>
+        <h1>My Rainbow Connection</h1>
         <h2>Greetings webtraveler!</h2>
 
         <p>
@@ -11,9 +10,3 @@
         </p>
     </article>
 </main>
-
-<style>
-    article {
-        border-color: var(--divided-red);
-    }
-</style>

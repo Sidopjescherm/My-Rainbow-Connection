@@ -8,9 +8,18 @@
 body {
     background: light-dark(var(--universal-bright), var(--universal-dark));
     color: light-dark(var(--universal-dark), var(--universal-bright));
-    margin-inline: auto;
-    max-inline-size: 40rem;
 }
+
+header {
+    border-bottom: solid .25rem var(--divided-red);
+    padding-bottom: 1rem;
+}
+
+main {
+    margin-inline: auto;
+    max-inline-size: 50rem;
+}
+
 
 h1 {
     font-size: clamp(2rem, 2.5rem, 3rem);
@@ -21,15 +30,14 @@ h1 {
 
 h2 {
     font-size: clamp(1.8rem, 2rem, 2.8rem);
+    @media (prefers-color-scheme: dark) {
+        font-size: clamp(1.8rem, 2.2rem, 2.8rem);
+    }
 }
 
-p {
+p, a {
     font-size: clamp(1rem, 1.4rem, 2rem);
     @media (prefers-color-scheme: dark) {
         line-height: 1.6;
-    }
-
-    &:hover {
-        box-shadow: 1rem 1rem 1rem var(--divided-red);
     }
 }

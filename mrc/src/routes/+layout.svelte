@@ -5,4 +5,23 @@
     import "$lib/global.css" 
 </script>
 
+<header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/experiments">Experiments</a>
+    </nav>
+</header>
 {@render children()}
+
+<style>
+    header {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+    }
+</style>
