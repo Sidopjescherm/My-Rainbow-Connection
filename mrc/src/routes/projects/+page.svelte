@@ -52,7 +52,7 @@
     }
 
     article {
-        border:dotted 5px red;
+        border:dotted 5px var(--divided-red);
         padding: 1rem;
     }
 </style>
