@@ -1,0 +1,51 @@
+:root {
+    color-scheme: light dark;
+    --universal-bright: hsl(43, 9%, 84%);
+    --universal-dark: hsl(225 11% 8);
+
+    --divided-red: light-dark(hsl(347 91 39), hsl(347 71 19));
+}
+
+body {
+    background: light-dark(var(--universal-bright), var(--universal-dark));
+    color: light-dark(var(--universal-dark), var(--universal-bright));
+}
+
+header {
+    border-bottom: solid .25rem var(--divided-red);
+    padding-bottom: 1rem;
+}
+
+main {
+    margin-inline: auto;
+    max-inline-size: 50rem;
+}
+
+code {
+    color: light-dark(var(--universal-bright), var(--universal-dark));
+    background-color: light-dark(var(--universal-dark), var(--universal-bright));
+}
+
+
+h1 {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+    @media (prefers-color-scheme: dark) {
+        font-size: clamp(2rem, 2.7rem, 3rem);
+    }
+}
+
+h2 {
+    font-size: clamp(1.8rem, 2rem, 2.8rem);
+}
+
+p, a {
+    font-size: clamp(1rem, 1.4rem, 2rem);
+    @media (prefers-color-scheme: dark) {
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: light-dark(var(--universal-dark), var(--universal-bright));
+    text-decoration: underline wavy;
+}
