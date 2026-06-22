@@ -9,6 +9,7 @@
     <nav>
         <a href="/">Home</a>
         <a href="/experiments">Experiments</a>
+        <a href="/projects">Projects</a>
     </nav>
 </header>
 {@render children()}
