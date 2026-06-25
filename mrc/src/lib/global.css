@@ -1,10 +1,16 @@
+
 :root {
     color-scheme: light dark;
     --universal-bright: hsl(43, 9%, 84%);
     --universal-dark: hsl(225 11% 8);
-
+    
     --divided-red: light-dark(hsl(347 91 39), hsl(347 71 19));
+    
+    @supports (color: oklch(56.24% 0.173 40.93)) {
+        --divided-red: light-dark(oklch(0.5094 0.201 20.41), oklch(0.2944 0.0994 13.87));
+    }
 }
+
 
 body {
     background: light-dark(var(--universal-bright), var(--universal-dark));
